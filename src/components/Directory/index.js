@@ -14,7 +14,7 @@ const Directory = props => {
             }}
 
             >
-                <a>
+                <a href = "http://localhost:3000/womans">
                     Womans
                 </a>
             </div>
@@ -26,7 +26,7 @@ const Directory = props => {
             }}
 
                >
-                   <a>
+                   <a href = "http://localhost:3000/mens">
                        Mens
                    </a>
                </div>

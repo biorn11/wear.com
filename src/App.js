@@ -11,6 +11,8 @@ import Homepage from './pages/Homepage';
 import Registration from "./pages/Registration";
 import Login from "./pages/login";
 import Recovery from "./pages/Recovery";
+import Mens from "./pages/Mens";
+import Womans from "./pages/Womans";
 import'./default.scss';
 
 
@@ -73,6 +75,16 @@ class App extends Component {
             <Route path='/recovery' render={() =>(
               <MainLayout>
                 <Recovery />
+              </MainLayout>
+            )} />
+              <Route path='/mens' render={() =>(
+              <MainLayout>
+                <Mens />
+              </MainLayout>
+            )} />
+            <Route path='/womans' render={() =>(
+              <MainLayout>
+                <Womans />
               </MainLayout>
             )} />
         </Switch>   
