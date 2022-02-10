@@ -6,11 +6,25 @@ const WomanImageGrid = () =>{
     console.log(docs);
 
     return(
-        <div className="img-grid">
+        <div className="products-container">
            {docs && docs.map(doc => (
-               <div className="img-wrap" key={doc.id}>
+               <div className="product-card" key={doc.id}>
+                 <div className='product-img'>
                 <img src = {doc.url} alt="uploaded pic" />
                 </div>
+                <div className='product-name'>
+                            {doc.name}
+                        </div>
+                <div className='product-description'>
+                            Description:{doc.description}
+                    </div>        
+                <div className='product-price'>
+                            {doc.price}.00$
+                    </div>
+                    <button className='addcart-btn'>Add To Cart</button>
+                    
+                </div>
+                
            )) }
         </div>
     )

@@ -6,7 +6,7 @@ import './styles.scss';
 
 
 function Mens() {
-  const [selectedImg, setSelectedImg] = useState(null);
+ 
 
   return (
   
@@ -15,8 +15,10 @@ function Mens() {
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
      
-      <MensImageGrid setSelectedImg={setSelectedImg} />
-      { selectedImg }
+      <MensImageGrid> 
+        
+      </MensImageGrid>
+
     </div>
   );
 }
